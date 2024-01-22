@@ -38,4 +38,14 @@ git add . -> agrega todos los cambios de todos los archivos al staged
 
 ------Los cambios son comprometidos en el repositorio. Debo escribir el memnsaje del cambio cuando se abra el archivo de configuracion.Al terminar guardo y cierro el archivo para que los cambios tengan efecto con 'git commit'
 Si quiero hacerlo con un shortcut es asi: 'git commit -m "mensaje descritivo del cambio"'.
-Con esto, 
+Con esto, tengo el proyecto en el head y ya esta listo para enviarlo a github
+
+------para agregar los cambios al directorio u origen/remoto
+1º tengo que ir a github y crear un nuevo repositorio en el simbolo '+';
+2º cuando rellene los campos de nombre del proyecto y demas le doy a crear repositorio y me lleva a otra pagina donde me dice los comandos para crear ese repositorio en node o si ya esta creado, me dice los comandos para o envio un repositorio ya existente y cojo la direccion url que me da y ejecuto el comando 'git remote add origin https://github.com/3l4m0r/primer-proyecto.git' y con esto le estoy diciendo a git donde esta la direccion de mi repositorio
+3º con el comando 'git push -u origin master' le digo que enlace al origen remoto y luego la rama a la que vamos a actualizar que es 'master'
+direccion = 'http://127.0.0.1:54237'
+4º despues vuelvo a github y voy a la pestaña de codigos o code y ahi aparecen mis proyectos y los puedo ver ya.
+
+------para guardar los cambios que se ha realizado despues se hace el mismo proceso:
+1º- gitt add .
