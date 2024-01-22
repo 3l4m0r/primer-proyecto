@@ -1,4 +1,4 @@
-Para configurar un proyecto en git lo hago asi
+----------Para configurar un proyecto en git lo hago asi
 git config --global user.name "nombre de github"
 git config --global user.email email-que-tengo.en-github
 git config --global user.ui true
@@ -12,7 +12,7 @@ git config --global core.autocrlf true ->para estandarizar los altos de
 git elemento -h -> veo opciones de configuracion en el terminal
 git help elemento -> veo opciones de configuracion en el navegador 
 
-Para inicializar Git en un directorio local
+------------Para inicializar Git en un directorio local
 -En la ruta que desee hago
 mkdir carpeta
 cd carpeta
@@ -25,12 +25,21 @@ code . -> voy a VSC
 consta de 4 estados. 3 de ellos son locales y el ultimo es trabaja en github
 el 1º es modified que se ejecuta en el working directory y es lo que yo typeo
 o la parte que quiero modificar de un modulo. Cuando esta hecha, pasa con 
-'git add' a la 2a etapa que es staged que es una etapa intermedia en la que 
+'git add .' a la 2a etapa que es staged que es una etapa intermedia en la que 
 se van organizando los archivos que voy modificando y se quedan a la espera 
-hasta que haya terminado creando un Index/staging que luego con 'git commit' 
-lo envio al Head/Local que es donde esta la 3a etapa llamada commited que es donde tengo que poner quien soy y que pretendo hacer con esta modificacion.Estos
+hasta que haya terminado creando un Index/staging que luego con 'git commit -m 'mensaje' 
+lo envio al Head/Local que es donde esta la 3a etapa llamada commited que es donde tengo que poner quien soy y que pretendo hacer con esta modificacion.En este punto pongo el codigo 'git remote add origin https....git' que lo que hace es añadir al origen remoto la direccion de github Despues se pone el codigo 'git branch -M main'y le indico cual va a ser el nombre del archivo principal. Estos
 3 pasos se hacen en mi computardora con git, pero cuando esta todo ok, con 'git push' lo envio a github/remote que es la etapa de remote, se le agrega la url del repositorio y esta accion empuja los datos del repositorio local al global.
+el ultimo comando es 'git push -u origin main'
 una vez que esta el proyecto en github, para descargar los datos del directorio remoto al local con 'git pull'lo puedo hacer.
+Para repositorios nuevos
+git init
+git add .
+git commit -m 'nombre cometido'
+git branch -M maingit 
+git remote add origin 'https.......git'
+git push -u origin main
+
 
 ------agregar los camnbios del working directory al staged
 git add archivo/directorio -> agrega los cambios de un archivo al staged uno por uno
@@ -53,4 +62,8 @@ direccion = 'http://127.0.0.1:54237'
 3º- git push  (no ace falta decirle mas ya que tiene los datos necesarios)
 
 
--------para descargar los cambios que se hayan hecho en un repositorio o cuando entro en un proyecto nuevo con el comando 'git pull' descargo los cambios del repositorio remoto al local. En este caso en github creo un archivo de licencia y lo pongo en el repositorio. Si yo soy del equipo y quyiero trabajar pero con los cambios ya hechos voy a mi terminal y pongo git pull y en VSC aparece el archivo nuevo creado en github
+-------para descargar los cambios que se hayan hecho en un repositorio o cuando entro en un proyecto nuevo con el comando 'git pull' descargo los cambios del repositorio remoto al local. En este caso en github creo un archivo de licencia y lo pongo en el repositorio. Si yo soy del equipo y quyiero trabajar pero con los cambios ya hechos voy a mi terminal y pongo git pull y en VSC aparece el archivo nuevo creado en github. Hay que tener cuidado con las carpetas de github
+
+
+
+-----crear repositorio con rama MAIN
