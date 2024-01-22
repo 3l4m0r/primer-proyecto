@@ -48,4 +48,9 @@ direccion = 'http://127.0.0.1:54237'
 4º despues vuelvo a github y voy a la pestaña de codigos o code y ahi aparecen mis proyectos y los puedo ver ya.
 
 ------para guardar los cambios que se ha realizado despues se hace el mismo proceso:
-1º- gitt add .
+1º- git add .
+2º- git commit -m 'contenido nuevo'
+3º- git push  (no ace falta decirle mas ya que tiene los datos necesarios)
+
+
+-------para descargar los cambios que se hayan hecho en un repositorio o cuando entro en un proyecto nuevo con el comando 'git pull' descargo los cambios del repositorio remoto al local. En este caso en github creo un archivo de licencia y lo pongo en el repositorio. Si yo soy del equipo y quyiero trabajar pero con los cambios ya hechos voy a mi terminal y pongo git pull y en VSC aparece el archivo nuevo creado en github
