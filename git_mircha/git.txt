@@ -1,0 +1,40 @@
+Para configurar un proyecto en git lo hago asi
+git config --global user.name "nombre de github"
+git config --global user.email email-que-tengo.en-github
+git config --global user.ui true
+git config list
+git config --global core.editor "code --wait"->asigno VSC(code) como editor
+     de configuracion de git
+git config --global -e ->abre un archivo en VSC donde estan los datos que he 
+     puesto anteriormente. Tengo que cerrar VSC para seguir
+git config --global core.autocrlf true ->para estandarizar los altos de 
+     linea en windows
+git elemento -h -> veo opciones de configuracion en el terminal
+git help elemento -> veo opciones de configuracion en el navegador 
+
+Para inicializar Git en un directorio local
+-En la ruta que desee hago
+mkdir carpeta
+cd carpeta
+touch README.md ->creo archivo make-down
+touch .gitignore ->creo archivo gitignore que es el que no se va a compartir
+git init ->crea una estructura en la carpeta que he creado
+code . -> voy a VSC
+
+----------Flujo basico-----------
+consta de 4 estados. 3 de ellos son locales y el ultimo es trabaja en github
+el 1º es modified que se ejecuta en el working directory y es lo que yo typeo
+o la parte que quiero modificar de un modulo. Cuando esta hecha, pasa con 
+'git add' a la 2a etapa que es staged que es una etapa intermedia en la que 
+se van organizando los archivos que voy modificando y se quedan a la espera 
+hasta que haya terminado creando un Index/staging que luego con 'git commit' 
+lo envio al Head/Local que es donde esta la 3a etapa llamada commited que es donde tengo que poner quien soy y que pretendo hacer con esta modificacion.Estos
+3 pasos se hacen en mi computardora con git, pero cuando esta todo ok, con 'git push' lo envio a github/remote que es la etapa de remote, se le agrega la url del repositorio y esta accion empuja los datos del repositorio local al global.
+una vez que esta el proyecto en github, para descargar los datos del directorio remoto al local con 'git pull'lo puedo hacer.
+
+------agregar los camnbios del working directory al staged
+git add archivo/directorio -> agrega los cambios de un archivo al staged uno por uno
+git add . -> agrega todos los cambios de todos los archivos al staged
+
+------Los cambios son comprometidos en el repositorio. Debo escribir el memnsaje del cambio cuando se abra el archivo de configuracion.Al terminar guardo y cierro el archivo para que los cambios tengan efecto con 'git commit'
+Si quiero hacerlo con un shortcut es asi: 'git commit -m "mensaje descritivo del cambio"'
