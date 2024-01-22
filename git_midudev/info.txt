@@ -1,0 +1,3 @@
+Para encontrar proyectos en los que empezar a colaborar hay 2 web que son interesantes:
+1- For good first issue
+2- good first issue

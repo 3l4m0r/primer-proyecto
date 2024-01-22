@@ -37,4 +37,5 @@ git add archivo/directorio -> agrega los cambios de un archivo al staged uno por
 git add . -> agrega todos los cambios de todos los archivos al staged
 
 ------Los cambios son comprometidos en el repositorio. Debo escribir el memnsaje del cambio cuando se abra el archivo de configuracion.Al terminar guardo y cierro el archivo para que los cambios tengan efecto con 'git commit'
-Si quiero hacerlo con un shortcut es asi: 'git commit -m "mensaje descritivo del cambio"'
+Si quiero hacerlo con un shortcut es asi: 'git commit -m "mensaje descritivo del cambio"'.
+Con esto, 
